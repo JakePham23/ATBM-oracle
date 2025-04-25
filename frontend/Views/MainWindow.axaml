@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="frontend.MainWindow"
+        Title="User Manager" Width="500" Height="600">
+  <StackPanel Margin="20" Spacing="10">
+    
+    <TextBlock Text="Create User" FontSize="20" FontWeight="Bold"/>
+    
+    <TextBox x:Name="UsernameBox" Watermark="Username"/>
+    <TextBox x:Name="PasswordBox" Watermark="Password"/>
+    <TextBox x:Name="TablespaceBox" Watermark="Tablespace (default USERS)"/>
+    <TextBox x:Name="ProfileBox" Watermark="Profile (default DEFAULT)"/>
+    <TextBox x:Name="QuotaBox" Watermark="Quota (optional)"/>
+    <TextBox x:Name="RoleBox" Watermark="Default Role (optional)"/>
+    <CheckBox x:Name="SysdbaCheckbox" Content="Grant SYSDBA"/>
+
+    <Button Content="Create User" Click="OnCreateUserClicked"/>
+    <TextBlock x:Name="ResponseText" Foreground="DarkGreen"/>
+  </StackPanel>
+</Window>
