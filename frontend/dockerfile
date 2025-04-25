@@ -1,17 +1,5 @@
-# frontend/Dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-
-ARG RUNTIME=win-x64
-
+FROM mcr.microsoft.com/dotnet/sdk:9.0
 WORKDIR /app
 COPY . .
+# Không cần RUN dotnet publish ở đây nếu đã dùng `command:` trong docker-compose
 
-# Build app tùy theo OS target
-RUN dotnet publish -c Release -r $RUNTIME --self-contained true /p:PublishSingleFile=true -o /app/publish
-
-FROM mcr.microsoft.com/dotnet/runtime-deps:8.0
-WORKDIR /app
-COPY --from=build /app/publish .
-
-# Có thể đổi CMD tùy OS nếu cần
-CMD ["./frontend"]

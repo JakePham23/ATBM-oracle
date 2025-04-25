@@ -1,30 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jakepham/Documents/SourceCode/PhanQuyen-ATBM/frontend/frontend.csproj": {}
+    "F:\\SourceCode\\ATBM-oracle\\frontend\\frontend.csproj": {}
   },
   "projects": {
-    "/Users/jakepham/Documents/SourceCode/PhanQuyen-ATBM/frontend/frontend.csproj": {
+    "F:\\SourceCode\\ATBM-oracle\\frontend\\frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jakepham/Documents/SourceCode/PhanQuyen-ATBM/frontend/frontend.csproj",
+        "projectUniqueName": "F:\\SourceCode\\ATBM-oracle\\frontend\\frontend.csproj",
         "projectName": "frontend",
-        "projectPath": "/Users/jakepham/Documents/SourceCode/PhanQuyen-ATBM/frontend/frontend.csproj",
-        "packagesPath": "/Users/jakepham/.nuget/packages/",
-        "outputPath": "/Users/jakepham/Documents/SourceCode/PhanQuyen-ATBM/frontend/obj/",
+        "projectPath": "F:\\SourceCode\\ATBM-oracle\\frontend\\frontend.csproj",
+        "packagesPath": "C:\\Users\\oOOo\\.nuget\\packages\\",
+        "outputPath": "F:\\SourceCode\\ATBM-oracle\\frontend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\vs share sdk\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/jakepham/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\oOOo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0-windows"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -37,12 +41,11 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "dependencies": {
             "Avalonia": {
               "target": "Package",
@@ -85,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,4 +11,8 @@ services:
     build:
       context: ./frontend
       args:
-        RUNTIME: ${FRONTEND_RUNTIME}
+        RUNTIME: win-x64
+    volumes:
+      - ./output:/app/publish
+    command: dotnet publish -c Release -r win-x64 --self-contained false -o /app/publish
+
